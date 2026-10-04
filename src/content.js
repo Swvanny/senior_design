@@ -39,7 +39,6 @@ export const seniorDesign = {
     "I learned how to integrate AI into everyday software, and how to apply a safety harness to ensure malicious use of the AI was not possible.",
   bigPicture:
     "Anyone who has a love of retro arcade games and has always wanted to make their own will love this system. It is made for those people of all ages who enjoy playing and making video games.",
-  // Put these PDFs in public/documents/ (or use full https:// links).
 };
 
 export const projects = [

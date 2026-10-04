@@ -182,10 +182,12 @@ function SeniorDesign() {
           <Field label="Skills & knowledge gained" text={s.skills} />
           <Field label="Big-picture contribution" text={s.bigPicture} />
         </div>
-        <div className="sd-foot">
-          {s.resources?.length > 0 && <div><h3>Built with</h3><Chips items={s.resources} /></div>}
-          {s.documents?.length > 0 && <DocLinks docs={s.documents} />}
-        </div>
+        {(s.resources?.length > 0 || s.documents?.length > 0) && (
+          <div className="sd-foot">
+            {s.resources?.length > 0 && <div><h3>Built with</h3><Chips items={s.resources} /></div>}
+            {s.documents?.length > 0 && <DocLinks docs={s.documents} />}
+          </div>
+        )}
       </section>
     </>
   );
