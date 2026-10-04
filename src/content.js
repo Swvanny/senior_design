@@ -101,7 +101,7 @@ export const experience = {
 };
 
 export const resume = {
-  file: "resume.pdf",
+  file: "Drew Swanson - Resume.pdf",
   highlights: [
     { label: "Certifications", items: ["CompTIA Security+ (SY0-701)"] },
     { label: "Activities", items: ["HACC Cyber-Defense competition", "ISEAGE penetration testing labs"] },
@@ -112,19 +112,19 @@ export const reflections = [
   {
     id: "gen-ed",
     title: "General Education Reflection",
-    file: "general-education-reflection.pdf",
+    file: "General_Education_Reflection.pdf",
     blurb: "How my general education courses shaped the way I think and work as an engineer.",
   },
   {
     id: "cumulative",
     title: "Cumulative Reflection",
-    file: "cumulative-reflection.pdf",
+    file: "Cumulative_Reflection.pdf",
     blurb: "A look back across my four years in Cybersecurity Engineering at Iowa State.",
   },
   {
     id: "ethics",
     title: "Ethics Paper",
-    file: "ethics-paper.pdf",
+    file: "Ethical Dilemma Paper.pdf",
     blurb: "Written for CYBE 2340: Legal, Professional and Ethical Issues in Cyber Systems",
   },
 ];
