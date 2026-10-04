@@ -14,12 +14,12 @@ export const profile = {
   phone: "563-340-3708",
   location: "Iowa",
   linkedin: "www.linkedin.com/in/drew-swanson-isu",
-  linkedinUrl: "",   // e.g. "https://www.linkedin.com/in/your-handle/"
+  linkedinUrl: "https://www.linkedin.com/in/drew-swanson-isu",
 };
 
 export const home = {
   intro:
-    "I'm Drew, a senior in Cybersecurity Engineering at Iowa State University, graduating in spring 2027. This site collects the projects, experience, and writing from my time at ISU. Start with my senior design project, or look through the other work I've done",
+    "I'm Drew, a senior in Cybersecurity Engineering at Iowa State University, graduating in spring 2027. This site collects the projects, experience, and writing from my time at ISU. Start with my senior design project, or look through the other work I've done in digital forensics, embedded systems, and software.",
 
   objectiveTitle: "Where I'm headed",
   objective: [
@@ -32,17 +32,17 @@ export const seniorDesign = {
   title: "AI Arcade",
   meta: "CPRE 4910 / 4920 · Team sdmay27-06 · Josh Clausman (client), Dr. Julie Rursch (advisor)",
   description:
-    "Retro video games hold enduring appeal, but modifying them requires technical knowledge that most fans don't have and shouldn't need to acquire. AI Arcade removes that barrier by using AI agents to interpret natural-language requests ("make the frog in Frogger a chicken") and translate them into modifications of existing game files, allowing users to reshape the games they grew up with without writing a single line of code.",
+    "Retro video games hold enduring appeal, but modifying them requires technical knowledge that most fans don't have and shouldn't need to acquire. AI Arcade removes that barrier by using AI agents to interpret natural-language requests (“make the frog in Frogger a chicken”) and translate them into modifications of existing game files, allowing users to reshape the games they grew up with without writing a single line of code.",
   role:
     "My role on the team was essentially the glue between the software and hardware teams, providing assistance wherever needed, and learning a lot about both on the way.",
   skills:
-    "I learned how to integrate AI into everyday software, and how to apply a safety harness to ensure malicious use of the AI was not possible",
+    "I learned how to integrate AI into everyday software, and how to apply a safety harness to ensure malicious use of the AI was not possible.",
   bigPicture:
-    "Anyone who has a love of retro arcade games and has always wanted to make their own will love this system. It is made for those people of all ages who enjoy playing and making video games",
+    "Anyone who has a love of retro arcade games and has always wanted to make their own will love this system. It is made for those people of all ages who enjoy playing and making video games.",
   // Put these PDFs in public/documents/ (or use full https:// links).
   documents: [
-    { label: "Design document", href: "documents/senior-design-document.pdf" },
-    { label: "Final presentation", href: "documents/senior-design-presentation.pdf" },
+    { label: "Design document", href: "[[Upload senior-design-document.pdf to public/documents]]" },
+    { label: "Final presentation", href: "[[Upload senior-design-presentation.pdf to public/documents]]" },
     { label: "Team website", href: "[[https://sdmay27-XX.sd.ece.iastate.edu]]" },
   ],
 };
@@ -61,23 +61,23 @@ export const projects = [
     resources: ["Windows 11 VM", "HxD", "Windows Registry", "Wireshark", "LSB steganography", "PowerShell"],
   },
   {
-    id: "embedded systems",
+    id: "roomba",
     kind: "Course Project",
     title: "Roomba Mission",
     description:
       "A course-long exploration of embedded systems. Used a Roomba vacuum robot to complete tasks and missions, using the connection between software and hardware. This culminated in a final mission, which was to navigate a field strewn with obstacles and achieve a mission objective.",
     role:
-      "As part of a team, I collaborated on coding, maitanence, and testing in weekly labs and projects.",
+      "As part of a team, I collaborated on coding, maintenance, and testing in weekly labs and projects.",
     skills:
       "I gained knowledge of what it is like to work with real-life embedded systems and how to properly work in a team for an extended period of time to accomplish a difficult goal.",
-    resources: ["C,", "Javascript", "PuTTY", "WiFi"],
+    resources: ["C", "JavaScript", "PuTTY", "WiFi"],
   },
   {
     id: "sheepshead",
     kind: "Personal project",
     title: "Sheepshead in the Browser",
     description:
-      "A browser version of Sheepshead, the trick-taking card game popular across Wisconsin and the Upper Midwest, played against four computer opponents. It is a single-page app with no frameworks, so every rule lives in hand-written JavaScript.",
+      "A browser version of Sheepshead, the trick-taking card game popular across Wisconsin and the Upper Midwest, played against four computer opponents. It is a single-page app with no frameworks, so every rule lives in plain JavaScript.",
     role:
       "I designed the game and defined how every rule should behave: a house-rule trump order that promotes the 7 of Diamonds to second-highest trump, call-card partner selection and the moment the partner is revealed, Schneider and Schwarz scoring multipliers, and the bots' play.",
     skills:
@@ -91,9 +91,9 @@ export const experience = {
   show: true,
   title: "Technology Assistant Intern",
   company: "TwinState Technical Services",
-  dates: "July 2025-Janruary 2026",
+  dates: "July 2025-January 2026",
   duties:
-    " Imaged and provisioned laptops and desktops for seamless end-user setup. Organized, tracked, and maintained inventory of serviced equipment to support efficient deployment cycles. Deployed and configured devices at customer sites, resolving setup issues and ensuring a smooth handoff ",
+    "Imaged and provisioned laptops and desktops for seamless end-user setup. Organized, tracked, and maintained inventory of serviced equipment to support efficient deployment cycles. Deployed and configured devices at customer sites, resolving setup issues and ensuring a smooth handoff.",
   technical:
     "SentinelOne, ImmyBot, Windows 11",
   soft:

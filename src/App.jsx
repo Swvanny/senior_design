@@ -11,7 +11,7 @@ const pages = [
   ["contact", "Contact"],
 ];
 
-const docPath = (file) => `${import.meta.env.BASE_URL}documents/${file}`;
+const docPath = (file) => `${import.meta.env.BASE_URL}documents/${encodeURIComponent(file)}`;
 
 // Renders text, turning [[...]] into a visible to-do highlight.
 function T({ children }) {
@@ -183,8 +183,8 @@ function SeniorDesign() {
           <Field label="Big-picture contribution" text={s.bigPicture} />
         </div>
         <div className="sd-foot">
-          <div><h3>Built with</h3><Chips items={s.resources} /></div>
-          <DocLinks docs={s.documents} />
+          {s.resources?.length > 0 && <div><h3>Built with</h3><Chips items={s.resources} /></div>}
+          {s.documents?.length > 0 && <DocLinks docs={s.documents} />}
         </div>
       </section>
     </>
@@ -221,14 +221,14 @@ function Experience() {
   const e = experience;
   return (
     <>
-      <PageHead eyebrow="Internship / co-op" title={e.title}>{`${e.company} · ${e.team} · ${e.dates}`}</PageHead>
+      <PageHead eyebrow="Internship / co-op" title={e.title}>{[e.company, e.team, e.dates].filter(Boolean).join(" · ")}</PageHead>
       <section className="grid-2 exp">
-        <Field label="Duties & projects" text={e.duties} />
-        <Field label="Technical skills" text={e.technical} />
-        <Field label="Soft skills" text={e.soft} />
-        <Field label="Evaluations" text={e.evaluations} />
-        <Field label="Presentations" text={e.presentations} />
-        <DocLinks docs={e.documents} />
+        {e.duties && <Field label="Duties & projects" text={e.duties} />}
+        {e.technical && <Field label="Technical skills" text={e.technical} />}
+        {e.soft && <Field label="Soft skills" text={e.soft} />}
+        {e.evaluations && <Field label="Evaluations" text={e.evaluations} />}
+        {e.presentations && <Field label="Presentations" text={e.presentations} />}
+        {e.documents?.length > 0 && <DocLinks docs={e.documents} />}
       </section>
     </>
   );
@@ -317,7 +317,7 @@ function Contact() {
           <button className="btn-link" onClick={copy}>{copied ? "Copied" : "Copy address"}</button>
         </div>
         <dl className="contact-list">
-          {rows.map(([k, v, url]) => (
+          {rows.filter(([, v]) => v).map(([k, v, url]) => (
             <div key={k}>
               <dt>{k}</dt>
               <dd>{url ? <a href={url} target="_blank" rel="noreferrer"><T>{v}</T> ↗</a> : <T>{v}</T>}</dd>
