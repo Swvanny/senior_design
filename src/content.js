@@ -40,11 +40,6 @@ export const seniorDesign = {
   bigPicture:
     "Anyone who has a love of retro arcade games and has always wanted to make their own will love this system. It is made for those people of all ages who enjoy playing and making video games.",
   // Put these PDFs in public/documents/ (or use full https:// links).
-  documents: [
-    { label: "Design document", href: "[[Upload senior-design-document.pdf to public/documents]]" },
-    { label: "Final presentation", href: "[[Upload senior-design-presentation.pdf to public/documents]]" },
-    { label: "Team website", href: "[[https://sdmay27-XX.sd.ece.iastate.edu]]" },
-  ],
 };
 
 export const projects = [
